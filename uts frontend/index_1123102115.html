@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengiriman Barang</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script_1123102115.js"></script>
+</head>
+<body>
+    <h2>Form Pengiriman Barang</h2>
+
+    <form id="shippingForm">
+        <label for="origin">Kota Asal:</label>
+        <select id="origin" name="origin">
+            <option value="">Pilih Kota Asal</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Banyuwangi">Banyuwangi</option>
+            <option value="Denpasar">Denpasar</option>
+        </select><br><br>
+
+        <label for="destination">Kota Tujuan:</label>
+        <select id="destination" name="destination">
+            <option value="">Pilih Kota Tujuan</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Banyuwangi">Banyuwangi</option>
+            <option value="Denpasar">Denpasar</option>
+        </select><br><br>
+
+        <label for="weight">Berat Barang (kg):</label>
+        <input type="number" id="weight" name="weight" min="1" required><br><br>
+
+        <button type="submit">Hitung Estimasi Biaya</button>
+    </form>
+
+    <h3>Estimasi Biaya Pengiriman:</h3>
+    <div id="costEstimate"></div>
+
+</body>
+</html>
